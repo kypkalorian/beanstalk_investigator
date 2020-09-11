@@ -20,7 +20,7 @@ def custom_environment_update(env_name, item, value):
 
     option_setting = {
         # 'ResourceName': 'string',
-        'Namespace': namepsace,
+        'Namespace': namespace,
         'OptionName': setting,
         'Value': value,
     }
@@ -54,4 +54,5 @@ def custom_environment_update(env_name, item, value):
         # ]
     )
 
-custom_environment_update("NodeJsPlatform4Test", "aws:elb:listener:80.SSLCertificateId", True)
+
+custom_environment_update("NodeJsPlatform4Test", "aws:elb:listener:80.ListenerEnabled", False)
